@@ -1,0 +1,108 @@
+body {
+    background-color: #0c1014;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-size: 62px;
+    text-align: center;
+    margin: 46px 0;
+}
+
+.header {
+    display: flex;
+    background-color: #05080a;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+.header__ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    gap: 16px;
+}
+
+.header__ul a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 7px;
+}
+
+/* pointer-event:none significa q o ponteiro do mouse mesmo q passe por cima de um link ele n vai mostrar q é clicavel */
+/* cursor: default ele funciona apenas no cursos ele deixa o cursor normal mesmo q passe por cima de um link, porem o link é clicavel  */
+
+.header__ul a:hover{
+    background-color: #cbe300;
+    color: black;
+}
+
+.pricing{
+    display: flex;
+    gap: 22px;
+}
+
+.pricing-plano{
+    flex: 1;
+    background-color: #1f262c;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 0 5px 15px -6px black;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow ordem é deslocamento horizontal | deslocamento vertical | esfumaçamento da sombra | expandir ou reduzir sombra para os lados | cor */
+}
+
+.pricing-plan-title{
+    text-transform: uppercase;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.pricing-plano p{
+    margin-top: 0;
+}
+
+.pricing-plan__price{
+    font-size: 34px;
+}
+
+.pricing-plan__features{
+    margin: 0 0 35px;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+
+.pricing-plan__features li::marker{
+    color:#cbe300
+}
+
+.pricing-plan__cta{
+    text-decoration: none;
+    color: #0c1014;
+    background-color: #cbe300;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+}
